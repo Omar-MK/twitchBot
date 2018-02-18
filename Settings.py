@@ -4,12 +4,12 @@ HOST = "irc.chat.twitch.tv"
 PORT = 6667
 
 # oath key
-PASS = "oauth:iq7ls0xp2afn9d28501si94ewpn9mu"
+PASS = "oauth:"
 # bot name
-NICK = "dacianbot"
+NICK = ""
 
 # channel nickname
-CHANNEL = "omarbeballin"
+CHANNEL = ""
 
 # delay between bot commands (min 1 sec to prevent spam)
 comDelay = 5
