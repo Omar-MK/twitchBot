@@ -1,1 +1,0 @@
-A simple twitch chat bot to monitor and moderate the chat
