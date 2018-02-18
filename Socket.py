@@ -24,4 +24,3 @@ def openSocket():
 # input (socket_name, message)
 def sendMsg(s, msg):
     s.send(("PRIVMSG #" + CHANNEL  + " :" + msg + "\r\n").encode())
-    print("Sent to " + CHANNEL + "'s chat: " + msg)

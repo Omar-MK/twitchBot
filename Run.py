@@ -32,5 +32,5 @@ while True:
         prevTime = currentTime
         # Add bot logic
         for n in range(0, comNum):
-            if("hi " in recordedChat[n]):
+            if("hi" in recordedChat[n]):
                 recordedChat = Commands.sendHi(recordedChat)

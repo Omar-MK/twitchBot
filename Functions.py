@@ -1,6 +1,6 @@
 def getUser(feed):
     seperated = feed.split(":", 2)
-    user = seperated[1].split("#", 1)[1].replace(" ", "")
+    user = seperated[1].split("!", 1)[0]
     return user
 
 def getMsg(feed):
