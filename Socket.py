@@ -1,6 +1,5 @@
-# this file contains all the functions that are used to interact with the socket
-
-# import the socket class so we could use the socket. fuctions
+# This file contains all the functions that are used to interact with the socket
+# import the socket class so we could use the socket fuctions
 import socket
 from Settings import HOST, PORT, PASS, NICK, CHANNEL
 
@@ -20,7 +19,9 @@ def openSocket():
     s.send(("JOIN #" + CHANNEL + "\r\n").encode())
     return s
 
-# this fucntion sends a message through a socket: input (socket_name, message)
+
+# this fucntion sends a message sent through the socket
+# input (socket_name, message)
 def sendMsg(s, msg):
     s.send(("PRIVMSG #" + CHANNEL  + " :" + msg + "\r\n").encode())
-    print("Sent : " + "PRIVMSG #" + CHANNEL  + " :" + msg)
+    print("Sent to " + CHANNEL + "'s chat: " + msg)
