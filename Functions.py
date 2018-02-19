@@ -1,3 +1,4 @@
+# This file contains any functions specific to dealing with the chat text
 def getUser(feed):
     seperated = feed.split(":", 2)
     user = seperated[1].split("!", 1)[0]
